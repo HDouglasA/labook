@@ -1,6 +1,6 @@
 # API - labook
 
-uma rede social com o objetivo de promover a conexão e interação entre seus mais diversos usuários. Possibildade de Dcadastra usuários, criar posts, fazer amizades, pegar post, etc.
+Uma rede social com o objetivo de promover a conexão e interação entre seus mais diversos usuários. Possibildade de cadastra usuários, criar posts, fazer amizades, pegar post, etc.
 
 #
 
