@@ -1,5 +1,6 @@
 # API - labook
-Repositório do projeto Labook
+
+uma rede social com o objetivo de promover a conexão e interação entre seus mais diversos usuários. Possibildade de Dcadastra usuários, criar posts, fazer amizades, pegar post, etc.
 
 #
 
