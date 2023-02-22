@@ -1,0 +1,166 @@
+# ................................................ Register Users .............................................. #
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+    "name": "Niko Bellic",
+    "email": "Niko@email.com",
+    "password": "niko1234"
+}
+
+###
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+    "name": "Ignacio Varga",
+    "email": "nacho@email.com",
+    "password": "nacho5678"
+}
+
+###
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+    "name": "Antonio Montana",
+    "email": "tony@email.com",
+    "password": "tony010101"
+}
+
+###
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+    "name": "Sarah Connor",
+    "email": "sarah@email.com",
+    "password": "sarah050505"
+}
+
+###
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+    "name": "Brienne de Tarth",
+    "email": "brienne@email.com",
+    "password": "brienne12345"
+}
+
+###
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+    "name": "Obito Uchiha",
+    "email": "obito@email.com",
+    "password": "obito12345"
+}
+
+###
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+    "name": "Shikamaru Nara",
+    "email": "shikamaru@email.com",
+    "password": "shikamaru12345"
+}
+
+###
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+    "name": "Mike Ehrmantraut",
+    "email": "mikeu@email.com",
+    "password": "mike12345"
+}
+
+
+# ................................................... Logins ................................................. #
+###
+POST http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+    "email": "mikeu@email.com",
+    "password": "mike12345"
+}
+
+###
+POST http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+    "email": "tony@email.com",
+    "password": "tony010101"
+}
+
+
+# ................................................ Create Posts .............................................. #
+###
+POST http://localhost:3003/post/create
+Content-Type: application/json
+
+{
+    "photo": "https://i.pinimg.com/originals/c6/6a/43/c66a436cf9a9d8fb903b9d71bc4112fe.jpg",
+    "description": "Vamos jogar boliche?",
+    "type": "event",
+    "authorId": "c8a32547-6d51-4cd7-b5b5-d92722b5d21d"
+}
+
+###
+POST http://localhost:3003/post/create
+Content-Type: application/json
+
+{
+    "photo": "https://canalcienciascriminais.com.br/wp-content/uploads/2017/03/Scarface.jpg",
+    "description": "say hello to my little friend",
+    "type": "normal",
+    "authorId": "fe4cb2a3-d537-4a94-9fba-93a1f3e10f8b"
+}
+
+###
+POST http://localhost:3003/post/create
+Content-Type: application/json
+
+{
+    "photo": "http://s2.glbimg.com/uIyVLZbkSA5zkwkq4OI4NBbH-UQ=/smart/e.glbimg.com/og/ed/f/original/2015/03/22/imagem34160_1.jpg",
+    "description": "I always tell the truth, even when I lie.",
+    "type": "Normal",
+    "authorId": "fe4cb2a3-d537-4a94-9fba-93a1f3e10f8b"
+}
+
+
+# ............................................... Get Posts by id .............................................. #
+###
+GET http://localhost:3003/post/02a520e6-0ed1-4493-8308-eb9d2a979b4b
+Content-Type: application/json
+
+###
+GET http://localhost:3003/post/f2868401-37f8-46e5-8f09-744e505c821c
+Content-Type: application/json
+
+
+# ............................................. Create Friendships ............................................ #
+###
+POST http://localhost:3003/friendship/create
+Content-Type: application/json
+
+{
+    "userId": "38448678-d56e-4c50-8602-1a0ba6918f20",
+    "userFriendId": "eb2ae5b8-37de-4a82-9ff8-24fb067aab7e"
+}
+
+
+# ............................................. Delete Friendship ............................................ #
+###
+DELETE http://localhost:3003/friendship/delete
+Content-Type: application/json
+
+{
+    "userId": "38448678-d56e-4c50-8602-1a0ba6918f20",
+    "userFriendId": "eb2ae5b8-37de-4a82-9ff8-24fb067aab7e"
+}
